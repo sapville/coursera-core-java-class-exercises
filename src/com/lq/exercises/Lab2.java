@@ -15,7 +15,7 @@ public class Lab2 {
 
         for (int i = 0; i < daysInMonths.length; i++) {
             switch (i) {
-                case 0, 2, 4, 6, 7, 9, 11:
+                case 0: case 2: case 4: case 6: case 7: case 9: case 11:
                     daysInMonths[i] = 31;
                     break;
                 case 1:
