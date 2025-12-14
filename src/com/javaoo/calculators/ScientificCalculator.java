@@ -6,11 +6,11 @@ public class ScientificCalculator {
     private double holdValue;
 
     public double exp(double arg) {
-        return 0;
+        return Math.exp(arg);
     }
 
     public double log(double arg) {
-        return 0;
+        return Math.log(arg);
     }
 
     public void putValueInMemory(double value) {
