@@ -1,4 +1,4 @@
-package com.lq.exercises;
+package com.lq.demos.transport;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -11,7 +11,7 @@ public class Car {
     private final int maxSpeed;
     private final int[] tires;
 
-    public Car(String name, LocalDate manufactureDate, int maxSpeed, int ... tires) {
+    public Car(String name, LocalDate manufactureDate, int maxSpeed, int... tires) {
         this.name = name;
         this.manufactureDate = manufactureDate;
         this.maxSpeed = maxSpeed;
@@ -42,7 +42,8 @@ public class Car {
     public static void main(String[] args) {
         Car[] cars = {
                 new Car("Car 1", LocalDate.of(1975, 1, 1), 120, 1000),
-                new Car("Car 2", LocalDate.of(2024, 10, 2), 220)
+                new Car("Car 2", LocalDate.of(2024, 10, 2), 220),
+                new StationWagon("Wagon 1", LocalDate.of(2020, 3, 4), 110)
         };
 
         Arrays.stream(cars).forEach(System.out::println);
